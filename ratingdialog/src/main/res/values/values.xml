@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red_color">#FF0000</color>
+    <style name="RateDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimAmount">0.0</item>
+
+    </style>
+
+
+    <dimen name="paddingTop">16dp</dimen>
+
+    <string name="smile_rating_terrible">Sangat buruk</string>
+    <string name="smile_rating_bad">Buruk</string>
+    <string name="smile_rating_okay">Lumayan</string>
+    <string name="smile_rating_good">Bagus</string>
+    <string name="smile_rating_great">Sangat bagus</string>
+    <string name="nanti">Nanti</string>
+    <string name="kirim">Kirim</string>
+    <string name="tulis_komentar_anda">Tulis komentar anda</string>
+
+    <!-- Theme for BottomSheetDialog -->
+    <style name="BottomSheet" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bottomsheet_background</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <style name="BaseBottomSheetDialog" parent="@style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="bottomSheetStyle">@style/BottomSheet</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="BaseBottomSheetDialog">
+    </style>
+
+
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="komentar">Komentar</string>
+    <string name="rating">Rating</string>
+    <string name="bottomsheet_rating_dialog">Bottomsheet Rating Dialog</string>
+    <string name="center_rating_dialog">Center Rating Dialog</string>
+</resources>

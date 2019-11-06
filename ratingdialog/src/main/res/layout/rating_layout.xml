@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:clipChildren="true">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+
+                    <!-- Header view container -->
+
+                    <!-- Alert Content -->
+                    <LinearLayout
+                        android:id="@+id/alert_body_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/paddingatas"
+                        android:orientation="vertical"
+                        android:showDividers="middle">
+
+                        <!--Title and icon-->
+
+                        <TextView
+                            android:id="@+id/tv_dialog_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="8dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp"
+                            tools:text="Judul" />
+
+                        <!--Message-->
+                        <View
+                            android:id="@+id/divider"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="?android:attr/listDivider" />
+
+                        <TextView
+                            android:id="@+id/tv_dialog_content_desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:animateLayoutChanges="true"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:textAlignment="center"
+                            tools:text="Deksripsi" />
+
+                        <com.hsalf.smilerating.SmileRating
+                            android:id="@+id/smile_rating"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:layout_marginBottom="14dp"
+                            app:showLine="false" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_pesan"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:gravity="top"
+                                android:hint="@string/tulis_komentar_anda" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <!--buttons-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btn_nanti"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/negative_button"
+                                android:text="@string/nanti"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp" />
+
+                            <Button
+                                android:id="@+id/btn_kirim"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/positive_button"
+                                android:text="@string/kirim"
+                                android:textColor="@android:color/white"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <!-- Footer view container -->
+                </LinearLayout>
+
+            </ScrollView>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
