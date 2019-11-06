@@ -112,3 +112,7 @@ Cara implementasi
                 centerRating.show();
                 
         
+Inspiration & Thanx for :
+~ https://github.com/sujithkanna/SmileyRating
+~ https://material.io/components/dialogs
+
