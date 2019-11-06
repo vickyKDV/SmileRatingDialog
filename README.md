@@ -1,4 +1,5 @@
 # SmileRatingDialog
+![alt text](https://raw.githubusercontent.com/vickyKDV/SmileRatingDialog/master/RatingDialog.gif)
 
 # Library Rating dialog dan BottomSheet Dialog dengan animasi Smile
 
