@@ -21,5 +21,5 @@ Cara implementasi
     dependencies {
         ...
         ...
-        implementation 'com.github.vickykdv:CircleRectImageView:1.0'
+        implementation 'com.github.vickykdv:SmileRatingDialog:1.0'
     }
